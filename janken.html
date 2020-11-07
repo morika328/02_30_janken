@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/sample.css">
+  <title>じゃんけん</title>
+</head>
+
+<body>
+  <header>
+    <h1>じゃんけん</h1>
+  </header>
+
+  <main>
+    <ul>
+      <li id="gu_btn">グー</li>
+      <li id="cho_btn">チョキ</li>
+      <li id="par_btn">パー</li>
+    </ul>
+    <div id="con_hand">コンピュータの出した手は？</div>
+    <div id="judgment">結果は？</div>
+  </main>
+
+  <footer>フッター</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      const result = ["グー", "チョキ", "パー"]
+
+      $("#gu_btn").on("click", function () {
+        let rand = Math.floor(Math.random() * 3);
+        $("#con_hand").text("コンピューターの手:" + result[rand]);
+        if (rand == 0) {
+          $("#judgment").text("あいこ");
+        } else if (rand == 1) {
+          $("#judgment").text("勝ち");
+        } else {
+          $("#judgment").text("負け");
+        }
+      });
+
+      $("#cho_btn").on("click", function () {
+        let rand = Math.floor(Math.random() * 3);
+        $("#con_hand").text("コンピューターの手:" + result[rand]);
+        if (rand == 0) {
+          $("#judgment").text("負け");
+        } else if (rand == 1) {
+          $("#judgment").text("あいこ");
+        } else {
+          $("#judgment").text("勝ち");
+        }
+      });
+
+      $("#par_btn").on("click", function () {
+        let rand = Math.floor(Math.random() * 3);
+        $("#con_hand").text("コンピューターの手:" + result[rand]);
+        if (rand == 0) {
+          $("#judgment").text("勝ち");
+        } else if (rand == 1) {
+          $("#judgment").text("負け");
+        } else {
+          $("#judgment").text("あいこ");
+        }
+      });
+
+    });
+
+  </script>
+
+</body>
+
+</html>
