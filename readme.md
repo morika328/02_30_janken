@@ -1,4 +1,4 @@
-・デプロイ先：https://morika328.github.io/02_30_janken/
+・デプロイ先：file:///C:/Users/1582/Desktop/Gs%20Academy/20201031_dev07/js01_sample/janken.html
 
 ・プロダクトの紹介
 じゃんけんゲーム
