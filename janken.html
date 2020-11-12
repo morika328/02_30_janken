@@ -10,21 +10,33 @@
 
 <body>
   <header>
-    <h1>じゃんけん</h1>
+    <h1 class="header">JANKEN</h1>
   </header>
 
   <div class="mainbody">
     <main>
-      <ul>
-        <li id="gu_btn">グー</li>
-        <li id="cho_btn">チョキ</li>
-        <li id="par_btn">パー</li>
+      <ul class="choice">
+        <div class="gu">
+          <li id="gu_btn">グー</li>
+          <li><img class="heart" src="../js01_sample/img/レース３.png" alt=""></li>
+        </div>
+
+        <div class="cho">
+          <li id="cho_btn">チョキ</li>
+          <li><img class="heart" src="../js01_sample/img/レース３.png" alt=""></li>
+        </div>
+
+        <div class="par">
+          <li id="par_btn">パー</li>
+          <li><img class="heart" src="../js01_sample/img/レース３.png" alt=""></li>
+        </div>
+
       </ul>
-      <div id="con_hand">コンピュータの出した手は？</div>
-      <div id="judgment">結果は？</div>
+      <div id="con_hand">Compter is...</div>
+      <div id="judgment">Judge</div>
     </main>
 
-    <footer>フッター</footer>
+    <footer></footer>
 
   </div>
 
@@ -35,7 +47,7 @@
 
       $("#gu_btn").on("click", function () {
         let rand = Math.floor(Math.random() * 3);
-        $("#con_hand").text("コンピューターの手:" + result[rand]);
+        $("#con_hand").text("Compter is..." + result[rand]);
         if (rand == 0) {
           $("#judgment").text("あいこ");
         } else if (rand == 1) {
@@ -47,7 +59,7 @@
 
       $("#cho_btn").on("click", function () {
         let rand = Math.floor(Math.random() * 3);
-        $("#con_hand").text("コンピューターの手:" + result[rand]);
+        $("#con_hand").text("Compter is..." + result[rand]);
         if (rand == 0) {
           $("#judgment").text("負け");
         } else if (rand == 1) {
@@ -59,7 +71,7 @@
 
       $("#par_btn").on("click", function () {
         let rand = Math.floor(Math.random() * 3);
-        $("#con_hand").text("コンピューターの手:" + result[rand]);
+        $("#con_hand").text("Compter is..." + result[rand]);
         if (rand == 0) {
           $("#judgment").text("勝ち");
         } else if (rand == 1) {

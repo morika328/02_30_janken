@@ -6,47 +6,125 @@ body{
     background :url(../img/背景４.jpg);
     background-size: 100%;
     height: 130px;
+    font-family: fantasy;
 }
 
 .mainbody{
 
 }
 
+
+h1.header{
+    font-family: serif;
+    color: white
+}
+
 header{
-    border-bottom: 1px solid #ccc;
+    font-family: fantasy;
     text-align: center;
 }
-main{
-    border-bottom:1px solid #ccc;
-    
+
+
+.choice{
+    display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
+.gu{
+position: relative;
+}
+
+.heart{
+     width: 100%;
+     padding: 30px;
+
+}
+
+#gu_btn{
+    position: absolute;/*絶対配置*/
+  top: 50%;
+  left: 60%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+}
+
+.cho{
+position: relative;
+}
+
+#cho_btn{
+    position: absolute;/*絶対配置*/
+  top: 50%;
+  left: 65%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  width: 100px;
+}
+
+.par{
+position: relative;
+}
+
+#par_btn{
+    position: absolute;/*絶対配置*/
+  top: 50%;
+  left: 65%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+}
 
 footer{
-    border-bottom:1px solid #ccc;
     text-align: center;
 }
 p{
     font-size:200%;
     text-align: center;
-    border-bottom:1px solid #fff;
     height:200px;
 }
 ul{
     padding: 0;
-    border-top: 1px solid #000000;
+    color: palevioletred;
     display:table;  /* 定義 */
     table-layout: fixed;
     width:100%;
+    height: 150px;
 }
 li{
     text-align: center;
+    justify-content: center;
+    align-items: center;
     list-style-type:none;
-    border: 1px solid #666;
     display:table-cell;  /* 定義 */
     cursor: pointer;
 }
 li:hover{
-    background: #0066CC;
-    color:#fff;
+    color:rgb(129, 102, 226);
+}
+
+#con_hand{
+    font-family: serif;
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#judgment{
+    font-family: serif;
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
